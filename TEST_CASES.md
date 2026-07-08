@@ -105,3 +105,32 @@ Verify that a logged-in user can successfully log out of the application.
 ### Expected Result
 
 The user is logged out successfully and is redirected to the Login page.
+
+
+## TC005 – Search Product
+
+### Objective
+
+Verify that a user can search for a product successfully.
+
+### Preconditions
+
+* The Automation Exercise website is available.
+
+### Test Data
+
+* Search term: Blue Top
+
+### Test Steps
+
+1. Open https://automationexercise.com.
+2. Click **Products**.
+3. Verify that the Products page is displayed.
+4. Enter **Blue Top** in the search field.
+5. Click the **Search** button.
+6. Verify that the search results are displayed.
+7. Verify that the product **Blue Top** appears in the results.
+
+### Expected Result
+
+The Products page displays the search results, including the product "Blue Top".
