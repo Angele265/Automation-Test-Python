@@ -282,3 +282,51 @@ Medium
 ### Expected Result
 
 All product details are displayed correctly.
+
+
+## TC010 – Place Order Successfully
+
+### Objective
+
+Verify that a registered user can successfully place an order.
+
+### Priority
+
+High
+
+### Preconditions
+
+* User account exists.
+* User can log in successfully.
+
+### Test Data
+
+| Field            | Value            |
+| ---------------- | ---------------- |
+| Product          | Blue Top         |
+| Name on Card     | Test User        |
+| Card Number      | 4111111111111111 |
+| CVC              | 123              |
+| Expiration Month | 12               |
+| Expiration Year  | 2027             |
+
+### Test Steps
+
+1. Launch the browser.
+2. Navigate to https://automationexercise.com.
+3. Click **Signup/Login**.
+4. Enter valid email and password.
+5. Click **Login**.
+6. Verify user is logged in.
+7. Navigate to Products.
+8. Add **Blue Top** to cart.
+9. Open Cart.
+10. Click **Proceed To Checkout**.
+11. Verify checkout page is displayed.
+12. Enter payment details.
+13. Click **Pay and Confirm Order**.
+14. Verify order confirmation message.
+
+### Expected Result
+
+The order is successfully placed and the confirmation message is displayed.
