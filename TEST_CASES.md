@@ -202,3 +202,46 @@ High
 ### Expected Result
 
 The selected product is successfully removed from the shopping cart.
+
+
+## TC008 – Contact Us Form
+
+### Objective
+
+Verify that a user can successfully submit the Contact Us form.
+
+### Priority
+
+Medium
+
+### Preconditions
+
+* The Automation Exercise website is accessible.
+
+### Test Data
+
+| Field   | Value                                         |
+| ------- | --------------------------------------------- |
+| Name    | Test User                                     |
+| Email   | [testuser@test.com](mailto:testuser@test.com) |
+| Subject | Test Inquiry                                  |
+| Message | This is an automation test message            |
+
+### Test Steps
+
+1. Launch the browser.
+2. Navigate to https://automationexercise.com.
+3. Click **Contact Us**.
+4. Verify that the Contact Us page is displayed.
+5. Enter name.
+6. Enter email.
+7. Enter subject.
+8. Enter message.
+9. Upload a test file.
+10. Click **Submit**.
+11. Accept the alert popup.
+12. Verify the success message is displayed.
+
+### Expected Result
+
+The contact form is submitted successfully and the success message is displayed.
