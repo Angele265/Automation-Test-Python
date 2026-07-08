@@ -29,6 +29,16 @@ class ProductsPage(BasePage):
         "//p[text()='Blue Top']"
     )
 
+    add_blue_top = (
+        By.XPATH,
+        "//a[@data-product-id='1']"
+    )
+
+    view_cart = (
+        By.XPATH,
+        "//u[text()='View Cart']"
+    )
+
     def click_products(self):
         self.click(self.products_button)
 
@@ -47,3 +57,9 @@ class ProductsPage(BasePage):
         return self.driver.find_element(
             *self.blue_top_product
         ).is_displayed()
+
+    def add_blue_top_to_cart(self):
+        self.click(self.add_blue_top)
+
+    def click_view_cart(self):
+        self.click(self.view_cart)

@@ -134,3 +134,71 @@ Verify that a user can search for a product successfully.
 ### Expected Result
 
 The Products page displays the search results, including the product "Blue Top".
+
+
+## TC006 – Add Product to Cart
+
+### Objective
+
+Verify that a user can add a product to the shopping cart successfully.
+
+### Priority
+
+High
+
+### Preconditions
+
+* The Automation Exercise website is available.
+
+### Test Data
+
+* Product: Blue Top
+
+### Test Steps
+
+1. Launch the browser.
+2. Navigate to https://automationexercise.com.
+3. Click **Products**.
+4. Verify that the Products page is displayed.
+5. Locate the product **Blue Top**.
+6. Click **Add to Cart**.
+7. In the confirmation modal, click **View Cart**.
+8. Verify that the Cart page is displayed.
+9. Verify that **Blue Top** is present in the cart.
+
+### Expected Result
+
+The selected product is successfully added to the shopping cart and appears on the Cart page.
+
+
+## TC007 – Remove Product from Cart
+
+### Objective
+
+Verify that a user can remove a product from the shopping cart.
+
+### Priority
+
+High
+
+### Preconditions
+
+* The shopping cart contains at least one product.
+
+### Test Data
+
+* Product: Blue Top
+
+### Test Steps
+
+1. Launch the browser.
+2. Navigate to https://automationexercise.com.
+3. Add the product **Blue Top** to the cart.
+4. Open the shopping cart.
+5. Verify that **Blue Top** is present.
+6. Click the **Delete (X)** button for the product.
+7. Verify that the product is removed from the shopping cart.
+
+### Expected Result
+
+The selected product is successfully removed from the shopping cart.
