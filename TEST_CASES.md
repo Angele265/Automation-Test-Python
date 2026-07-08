@@ -74,3 +74,34 @@ Verify that a new user can successfully register on the Automation Exercise webs
 
 **Expected Result**:
 User should be successfully logged in.
+
+## TC004 – Logout User Successfully
+
+### Objective
+
+Verify that a logged-in user can successfully log out of the application.
+
+### Preconditions
+
+* A valid user account exists.
+* The user is not logged in.
+
+### Test Data
+
+* Email: Registered user email
+* Password: Registered user password
+
+### Test Steps
+
+1. Open https://automationexercise.com.
+2. Click **Signup / Login**.
+3. Enter a valid email address.
+4. Enter a valid password.
+5. Click **Login**.
+6. Verify that **Logged in as username** is displayed.
+7. Click **Logout**.
+8. Verify that the **Login to your account** page is displayed.
+
+### Expected Result
+
+The user is logged out successfully and is redirected to the Login page.

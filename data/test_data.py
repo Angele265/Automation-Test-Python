@@ -1,5 +1,6 @@
 TEST_USER_NAME = "Test User"
 TEST_USER_PASSWORD = "Password123"
+TEST_USER_EMAIL = "test1751964200@gmail.com"
 
 TEST_FIRST_NAME = "Test"
 TEST_LAST_NAME = "Automation"
