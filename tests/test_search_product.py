@@ -1,10 +1,11 @@
 from pages.products_page import ProductsPage
 from data.test_data import SEARCH_PRODUCT
+from utils.config import BASE_URL
 
 
 def test_search_product(driver):
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     products = ProductsPage(driver)
 

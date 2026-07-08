@@ -1,11 +1,12 @@
 from pages.products_page import ProductsPage
 from pages.product_details_page import ProductDetailsPage
 from data.test_data import EXPECTED_PRODUCT_NAME
+from utils.config import BASE_URL
 
 
 def test_verify_product_details(driver):
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     products = ProductsPage(driver)
     details = ProductDetailsPage(driver)

@@ -1,6 +1,7 @@
 import os
 
 from pages.contact_page import ContactPage
+from utils.config import BASE_URL
 from data.test_data import (
     CONTACT_NAME,
     CONTACT_EMAIL,
@@ -9,9 +10,10 @@ from data.test_data import (
 )
 
 
+
 def test_contact_us_form(driver):
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     contact = ContactPage(driver)
 

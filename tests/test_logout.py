@@ -1,11 +1,12 @@
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from data.test_data import TEST_USER_EMAIL, TEST_USER_PASSWORD
+from utils.config import BASE_URL
 
 
 def test_logout_user(driver):
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     home_page = HomePage(driver)
     login_page = LoginPage(driver)

@@ -1,10 +1,10 @@
 from pages.products_page import ProductsPage
 from pages.cart_page import CartPage
-
+from utils.config import BASE_URL
 
 def test_add_product_to_cart(driver):
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     products = ProductsPage(driver)
     cart = CartPage(driver)

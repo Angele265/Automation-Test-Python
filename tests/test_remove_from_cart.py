@@ -1,10 +1,11 @@
 from pages.products_page import ProductsPage
 from pages.cart_page import CartPage
+from utils.config import BASE_URL
 
 
 def test_remove_product_from_cart(driver):
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     products = ProductsPage(driver)
     cart = CartPage(driver)

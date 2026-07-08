@@ -3,10 +3,11 @@ from pages.login_page import LoginPage
 from pages.products_page import ProductsPage
 from pages.cart_page import CartPage
 from pages.checkout_page import CheckoutPage
+from utils.config import BASE_URL
 
 from data.test_data import (
-    TEST_EMAIL,
-    TEST_PASSWORD,
+    TEST_USER_EMAIL,
+    TEST_USER_PASSWORD,
     CARD_NAME,
     CARD_NUMBER,
     CARD_CVC,
@@ -17,8 +18,7 @@ from data.test_data import (
 
 def test_place_order(driver):
 
-    driver.get(
-        "https://automationexercise.com"
+    driver.get(BASE_URL
     )
 
     home = HomePage(driver)
@@ -31,8 +31,8 @@ def test_place_order(driver):
     # Login
     home.click_signup_login()
 
-    login.enter_email(TEST_EMAIL)
-    login.enter_password(TEST_PASSWORD)
+    login.enter_email(TEST_USER_EMAIL)
+    login.enter_password(TEST_USER_PASSWORD)
     login.click_login()
 
     assert login.is_user_logged_in()

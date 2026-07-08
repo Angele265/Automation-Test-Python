@@ -1,9 +1,8 @@
-import time
-
 from pages.signup_page import SignupPage
 from utils.driver_factory import DriverFactory
 from data.test_data import TEST_USER_NAME
 from utils.data_generator import generate_email
+from utils.config import BASE_URL
 
 
 
@@ -13,7 +12,7 @@ def test_register_new_user():
 
     signup = SignupPage(driver)
 
-    driver.get("https://automationexercise.com")
+    driver.get(BASE_URL)
 
     signup.click_signup_login()
 
