@@ -24,6 +24,6 @@ def test_register_new_user():
 
     signup.click_signup()
 
-    assert "Enter Account Information" in driver.page_source
+    assert signup.verify_account_created()
 
     driver.quit()
