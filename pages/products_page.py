@@ -39,6 +39,11 @@ class ProductsPage(BasePage):
         "//u[text()='View Cart']"
     )
 
+    view_product = (
+        By.XPATH,
+        "//a[contains(text(),'View Product')]"
+    )
+
     def click_products(self):
         self.click(self.products_button)
 
@@ -63,3 +68,6 @@ class ProductsPage(BasePage):
 
     def click_view_cart(self):
         self.click(self.view_cart)
+
+    def click_view_product(self):
+        self.click(self.view_product)

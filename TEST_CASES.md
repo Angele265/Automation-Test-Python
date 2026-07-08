@@ -245,3 +245,40 @@ Medium
 ### Expected Result
 
 The contact form is submitted successfully and the success message is displayed.
+
+
+## TC009 – Verify Product Details
+
+### Objective
+
+Verify that product details are displayed correctly on the product detail page.
+
+### Priority
+
+Medium
+
+### Preconditions
+
+* The Automation Exercise website is accessible.
+
+### Test Data
+
+* Product: Blue Top
+
+### Test Steps
+
+1. Launch the browser.
+2. Navigate to https://automationexercise.com.
+3. Click **Products**.
+4. Locate the product **Blue Top**.
+5. Click **View Product**.
+6. Verify that the product detail page is displayed.
+7. Verify the product name.
+8. Verify the product price.
+9. Verify the product availability.
+10. Verify the product condition.
+11. Verify the product brand.
+
+### Expected Result
+
+All product details are displayed correctly.
